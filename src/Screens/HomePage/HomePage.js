@@ -1,5 +1,5 @@
 import React from 'react';
-import Navvbarr from '../../Components/Navvbarr/Navvbarr';
+import Navvbarr from '../../Components/Home/Navvbarr/Navvbarr';
 
 const HomePage = () => {
     return (

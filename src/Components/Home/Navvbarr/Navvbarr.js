@@ -2,7 +2,7 @@ import React from 'react';
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
-
+import logo from '../../../image/sigcomm.png';
 
 const navigation = [
     { name: "Home", href: "#", current: false },
@@ -20,7 +20,7 @@ const navigation = [
 const Navvbarr = () => {
     return (
         <div>
-            <Disclosure as="nav" className="bg-gray-800">
+            <Disclosure as="nav" className="">
         {({ open }) => (
           <>
             <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -45,12 +45,12 @@ const Navvbarr = () => {
                     />
                     {/* Here to add TITLE IMG */}
                     <img
-                      className="hidden lg:block h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
+                      className="hidden lg:block h-10 w-auto space-x-10"
+                      src={logo}
                       alt="Workflow"
                     />
                   </div>
-                  <div className="hidden sm:block sm:ml-6">
+                  <div className=" hidden sm:block sm:ml-6">
                     <div className="flex space-x-4">
                       {navigation.map((item) => (
                         <a
@@ -67,8 +67,8 @@ const Navvbarr = () => {
                           {item.name}
                         </a>
                       ))}
+                         </div>
                     </div>
-                  </div>
                 </div>
                 <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                   {/* <button className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
@@ -81,7 +81,7 @@ const Navvbarr = () => {
                     {({ open }) => (
                       <>
                         <div>
-                        <button class="bg-transparent hover:bg-blue-500 text-blue-400 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                        <button class="bg-transparent hover:bg-blue-500 text-blue-400 font-semibold hover:text-white py-2 px-4 border border-white-500 hover:border-transparent rounded">
   Login
 </button>
                           {/* <Menu.Button className="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
@@ -177,6 +177,7 @@ const Navvbarr = () => {
           </>
         )}
       </Disclosure>
+      
         </div>
     );
 };
