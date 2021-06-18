@@ -1,6 +1,6 @@
 import React from 'react';
 import Navvbarr from '../../Components/Home/Navvbarr/Navvbarr';
-import Slider from '../../Components/Home/Navvbarr/Slider/Slider';
+import Slider from '../../Components/Home/Slider/Slider';
 
 const HomePage = () => {
     return (
