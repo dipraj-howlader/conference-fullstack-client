@@ -3,6 +3,8 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import logo from '../../../image/sigcomm.png';
+import Countdown from "react-countdown";
+import './Navvbarr.css';
 
 const navigation = [
     { name: "Home", href: "#", current: false },
@@ -20,7 +22,7 @@ const navigation = [
 const Navvbarr = () => {
     return (
         <div>
-            <Disclosure as="nav" className="">
+            <Disclosure as="nav" className="bg-blue-500 ">
         {({ open }) => (
           <>
             <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -81,7 +83,7 @@ const Navvbarr = () => {
                     {({ open }) => (
                       <>
                         <div>
-                        <button class="bg-transparent hover:bg-blue-500 text-blue-400 font-semibold hover:text-white py-2 px-4 border border-white-500 hover:border-transparent rounded">
+                        <button class="bg-transparent hover:bg-gray-700 text-gray-300 font-semibold hover:text-white py-2 px-4 border border-white-500 hover:border-transparent rounded">
   Login
 </button>
                           {/* <Menu.Button className="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
@@ -177,7 +179,18 @@ const Navvbarr = () => {
           </>
         )}
       </Disclosure>
-      
+     <div className="ZidexContent">
+        <h1 className="text-6xl">Biggest Startup Conference</h1>
+        <br />
+        <h3>Event Begin in: </h3>
+        <Countdown className="text-4xl" date={Date.now() + 1000000000} />
+        <br />
+        <span>Day: Hour: Minute: Second</span>
+        <br />
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+  BE A PARTICIPANT
+</button>
+     </div>
         </div>
     );
 };

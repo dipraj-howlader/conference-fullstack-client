@@ -11,7 +11,7 @@
   @media only screen and (max-width: 600px) {
     .pic-ctn > img {
       position: absolute;
-    height: 300px;
+    height: 500px;
     opacity: 0;
     animation: display 10s infinite;
     }

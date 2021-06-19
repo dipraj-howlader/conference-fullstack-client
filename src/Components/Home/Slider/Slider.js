@@ -8,7 +8,7 @@ import img5 from '../../../image/5.jpg';
 
 const Slider = () => {
     return (
-        <div className="pic-ctn">
+        <div className="pic-ctn opacity-50">
         <img src={img1} alt="" className="pic" class="object-cover  w-full ..." />
         <img src={img2} alt="" className="pic" class="object-cover  w-full ..." />
         <img src={img3} alt="" className="pic"  class="object-cover  w-full ..."/>

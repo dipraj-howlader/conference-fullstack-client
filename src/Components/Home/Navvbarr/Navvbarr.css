@@ -1,0 +1,17 @@
+.ZidexContent{
+    position:absolute;
+    z-index: 1;
+    bottom: 30%;
+}
+.ZidexContent button{
+   position: absolute;
+    z-index: 2;
+    left: 60%;
+}
+@media only screen and (max-width: 600px) {
+    .ZidexContent button{
+        position: absolute;
+         z-index: 2;
+         left: 30%;
+     }
+  }
