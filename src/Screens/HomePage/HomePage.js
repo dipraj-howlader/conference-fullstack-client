@@ -2,6 +2,7 @@ import React from 'react';
 import Navvbarr from '../../Components/Home/Navvbarr/Navvbarr';
 import Services from '../../Components/Home/Services/Services';
 import Slider from '../../Components/Home/Slider/Slider';
+import Something from '../../Components/Home/Something/Something';
 
 const HomePage = () => {
     return (
@@ -9,6 +10,7 @@ const HomePage = () => {
             <Navvbarr></Navvbarr>
             <Slider></Slider>
             <Services></Services>
+            <Something></Something>
         </div>
     );
 };

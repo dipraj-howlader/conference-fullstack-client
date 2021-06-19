@@ -1,9 +1,10 @@
 import React from 'react';
+import './Service.css';
 
 const Services = () => {
     return (
-        <div>
-            <h1 style={{position:'block'}}>This is ok</h1>
+        <div className="service-container">
+            <h1></h1>
             <h6>THis is Siraj</h6>
         </div>
     );

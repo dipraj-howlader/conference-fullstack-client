@@ -20,7 +20,7 @@
   
   @keyframes display {
     0% {
-      transform: translateX(200px);
+      transform: translateX(0px);
       opacity: 0;
     }
     10% {
@@ -32,11 +32,11 @@
       opacity: 1;
     }
     30% {
-      transform: translateX(-200px);
+      transform: translateX(0px);
       opacity: 0;
     }
     100% {
-      transform: translateX(-200px);
+      transform: translateX(0px);
       opacity: 0;
     }
   }
