@@ -1,6 +1,5 @@
 .ZidexContent{
     position:absolute;
-    z-index: 1;
     bottom: 30%;
 }
 .ZidexContent button{
@@ -14,4 +13,7 @@
          z-index: 2;
          left: 30%;
      }
+  }
+  .navvvar .downNav{
+    position: absolute;
   }

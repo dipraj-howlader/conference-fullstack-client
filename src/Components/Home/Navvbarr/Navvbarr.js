@@ -22,7 +22,7 @@ const navigation = [
 const Navvbarr = () => {
     return (
         <div>
-            <Disclosure as="nav" className="bg-blue-500 ">
+            <Disclosure as="nav" className="navvvar bg-blue-500">
         {({ open }) => (
           <>
             <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -61,7 +61,7 @@ const Navvbarr = () => {
                           className={classNames(
                             item.current
                               ? "bg-gray-900 text-white"
-                              : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                              : "text-gray-300 hover:bg-gray-700 hover:text-white ",
                             "px-3 py-2 rounded-md text-sm font-medium"
                           )}
                           aria-current={item.current ? "page" : undefined}
@@ -179,7 +179,7 @@ const Navvbarr = () => {
           </>
         )}
       </Disclosure>
-     <div className="ZidexContent">
+     <div className="ZidexContent z-10">
         <h1 className="text-6xl">Biggest Startup Conference</h1>
         <br />
         <h3>Event Begin in: </h3>

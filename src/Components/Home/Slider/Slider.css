@@ -1,5 +1,5 @@
 .pic-ctn {
-    position: relative;
+    position: block;
   }
   
   .pic-ctn > img {
