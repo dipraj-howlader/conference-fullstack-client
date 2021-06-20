@@ -1,0 +1,49 @@
+
+
+.ticket-container h1{
+    text-align: center;
+    padding: 10px;
+    text-decoration:wavy;
+}
+.ticket-container p{
+    text-align: center;
+    margin-left: 30%;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+
+}
+@media only screen and (max-width: 600px) {
+    .ticket-container h1{
+        text-align: center;
+    }
+    .ticket-container p{
+        text-align: center;
+        margin-left:8% ;
+        width: 350px;
+    }
+  }
+
+  /* .card-container {
+    border-radius: 25px;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
+    height: 450px;
+    transition: 0.3s;
+  }
+  
+  .card-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  .card-container p {
+    color: #404655;
+    overflow: auto;
+    height: 130px;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .card-footer {
+    background-color: #fff;
+  } */
