@@ -1,9 +1,10 @@
 import React from 'react';
-import './Service.css';
+import './About.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagento } from '@fortawesome/free-brands-svg-icons';
 import { faChartLine } from '@fortawesome/free-solid-svg-icons';
 import { faDesktop } from '@fortawesome/free-solid-svg-icons';
+import AOS from 'aos';
 
 const topics = [
     {
@@ -26,7 +27,7 @@ const topics = [
     }
 ]
 
-const Services = () => {
+const About = () => {
     return (
         <div className="service-container">
             <h1 class="text-gray-700 text-2xl font-serif font-bold md:font-black">How ConStart can help your startup to grow</h1>
@@ -35,9 +36,6 @@ const Services = () => {
         {
                 topics.map(top => (
                     <div>   
-                            {
-                                console.log(`${top.iconi}`)
-                            }
                                 <FontAwesomeIcon icon={top.iconi} size="4x" color={top.color} />
                                 <h3 className="font-medium text-2xl text-gray-700 text-opacity-75 pb-4">{top.topic}</h3>
                                 <h6 className=" font-light">{top.des}</h6>
@@ -50,4 +48,4 @@ const Services = () => {
     );
 };
 
-export default Services;
+export default About;

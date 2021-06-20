@@ -1,6 +1,6 @@
 import React from 'react';
+import About from '../../Components/Home/About/About';
 import Navvbarr from '../../Components/Home/Navvbarr/Navvbarr';
-import Services from '../../Components/Home/Services/Services';
 import Slider from '../../Components/Home/Slider/Slider';
 
 const HomePage = () => {
@@ -8,7 +8,7 @@ const HomePage = () => {
         <div>
             <Navvbarr></Navvbarr>
             <Slider></Slider>
-            <Services></Services>
+            <About></About>
         </div>
     );
 };
