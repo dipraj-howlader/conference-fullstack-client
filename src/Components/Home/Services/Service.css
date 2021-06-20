@@ -1,3 +1,33 @@
 .service-container{
-    position:static;
+    margin-top: 490px;
 }
+
+.service-container h1{
+    text-align: center;
+    padding: 10px;
+    text-decoration:wavy;
+}
+.service-container p{
+    text-align: center;
+    margin-left: 30%;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .service-container{
+        margin-top: 550px;
+        /* border: 1px solid blue; */
+    }
+    .service-container h1{
+        text-align: center;
+    }
+    .service-container p{
+        text-align: center;
+        margin-left:8% ;
+        width: 350px;
+    }
+  }
