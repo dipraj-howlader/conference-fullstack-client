@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagento } from '@fortawesome/free-brands-svg-icons';
 import { faChartLine } from '@fortawesome/free-solid-svg-icons';
 import { faDesktop } from '@fortawesome/free-solid-svg-icons';
-import AOS from 'aos';
 
 const topics = [
     {

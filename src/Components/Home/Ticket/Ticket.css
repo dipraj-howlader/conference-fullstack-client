@@ -25,25 +25,23 @@
     }
   }
 
-  /* .card-container {
+  .tic-card-container {
     border-radius: 25px;
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
     height: 450px;
     transition: 0.3s;
   }
   
-  .card-container:hover {
+  .tic-card-container:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   }
-  .card-container p {
+  .tic-card-container h3 {
     color: #404655;
-    overflow: auto;
+    overflow:auto;
     height: 130px;
+    width: 230px;
     text-align: center;
     margin: auto;
   }
   
-  .card-footer {
-    background-color: #fff;
-  } */
