@@ -1,0 +1,35 @@
+.contact-container h1{
+    text-align: center;
+    padding: 10px;
+    text-decoration:wavy;
+}
+.contact-container p{
+    text-align: center;
+    margin-left: 30%;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+
+}
+.contact-container {
+    align-items: center;
+}
+.contact-container .contact-form-container{
+    padding-left: 350px;
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    .contact-container h1{
+        text-align: center;
+    }
+    .contact-container p{
+        text-align: center;
+        margin-left:8% ;
+        width: 350px;
+    }
+    .contact-container .contact-form-container{
+        padding-left: 00px;
+        text-align: center;
+    }
+  }
