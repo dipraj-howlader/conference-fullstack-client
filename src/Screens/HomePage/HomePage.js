@@ -4,7 +4,7 @@ import ContactUs from '../../Components/Home/ContactUs/ContactUs';
 import Navvbarr from '../../Components/Home/Navvbarr/Navvbarr';
 import Slider from '../../Components/Home/Slider/Slider';
 import Ticket from '../../Components/Home/Ticket/Ticket';
-
+import SocialMedia from '../../Components/Home/SocialMedia/SocialMedia';
 const HomePage = () => {
     return (
         <div>
@@ -13,6 +13,7 @@ const HomePage = () => {
             <About></About>
             <Ticket></Ticket>
             <ContactUs></ContactUs>
+            <SocialMedia></SocialMedia>
         </div>
     );
 };
