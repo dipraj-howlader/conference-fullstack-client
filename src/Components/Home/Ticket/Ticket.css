@@ -21,8 +21,12 @@
     .ticket-container p{
         text-align: center;
         margin-left:8% ;
-        width: 350px;
+        width: 300px;
     }
+    .ticket-container .tic-card-container h3{
+        width: 190px;
+    }
+
   }
 
   .tic-card-container {

@@ -180,7 +180,7 @@ const Navvbarr = () => {
         )}
       </Disclosure>
      <div className="ZidexContent z-10">
-        <h1 className="text-6xl">Biggest Startup Conference</h1>
+        <h1 className="text-4xl md:text-6xl">Biggest Startup Conference</h1>
         <br />
         <h3>Event Begin in: </h3>
         <Countdown className="text-4xl" date={Date.now() + 1000000000} />

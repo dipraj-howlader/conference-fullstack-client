@@ -38,7 +38,7 @@ const Ticket = () => {
                     <h5 className="text-5xl">{detail.price}</h5>
                     </div>
                     
-                    <h3 className=" font-light">{detail.description}</h3>
+                    <h3 className="font-medium">{detail.description}</h3>
                     <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-8 border border-blue-400 hover:border-transparent rounded">
                     REGISTER 
                     </button>
