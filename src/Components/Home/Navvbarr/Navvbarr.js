@@ -1,27 +1,26 @@
 import React from 'react';
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import logo from '../../../image/sigcomm.png';
 import Countdown from "react-countdown";
 import './Navvbarr.css';
 
+
 const navigation = [
-    { name: "Home", href: "#", current: false },
-    { name: "About", href: "#", current: false },
-    { name: "Speaker", href: "#", current: false },
-    { name: "Schedules", href: "#", current: false },
-    { name: "Tickets", href: "#", current: false },
-    { name: "Sponsors", href: "#", current: false },
+    { name: "Home", href: "#home", current: false },
+    { name: "About", href: "#About", current: false },
+    { name: "Tickets", href: "#Tickets", current: false },
+    { name:  "Get In Touch", href: "#GetInTouch", current: false },
+    { name: "Find Us", href: "#FindUs", current: false }
   ];
   
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
   }
-
 const Navvbarr = () => {
     return (
-        <div>
+        <div id="home">
             <Disclosure as="nav" className="navvvar bg-blue-500">
         {({ open }) => (
           <>

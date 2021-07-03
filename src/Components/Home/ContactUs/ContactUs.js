@@ -4,7 +4,7 @@ import './ContactUs.css';
 
 const ContactUs = () => {
     return (
-        <div className="contact-container">
+        <div className="contact-container" id="GetInTouch">
             <h1 class="text-gray-700 text-2xl font-serif font-bold md:font-black">Stay With Us</h1>
             <p className="font-semibold text-gray-800">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
             <div className="grid gap-4 grid-cont contact-form-container pb-16">

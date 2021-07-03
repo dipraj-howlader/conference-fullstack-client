@@ -13,7 +13,7 @@ const SocialMedia = () => {
         window.open("https://dipraj-s-portfolio.web.app/","_blank");
     }
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 text-center" id="FindUs">
             <div className="mt-8 pb-5 justify-center items-center">
             <FontAwesomeIcon style={{marginRight:'50px'}} icon={faFacebook} size="2x" color="rgb(21, 135, 173)" />
             <FontAwesomeIcon style={{marginRight:'50px'}} icon={faTwitter} size="2x" color="#00acee" />

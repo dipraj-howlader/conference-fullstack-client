@@ -28,7 +28,7 @@ const topics = [
 
 const About = () => {
     return (
-        <div className="service-container">
+        <div className="service-container" id="About">
             <h1 class="text-gray-700 text-2xl font-serif font-bold md:font-black">How ConStart can help your startup to grow</h1>
             <p className="font-semibold text-gray-800">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, ut, eos dolorem maiores nisi sapiente non, vitae vel tenetur optio..</p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 grid-cont px-16 pb-16">

@@ -25,7 +25,7 @@ const tikdetails = [{
 
 const Ticket = () => {
     return (
-        <div className="ticket-container">
+        <div className="ticket-container" id="Tickets"> 
              <h1 class="text-gray-700 text-2xl font-serif font-bold md:font-black">Tickets</h1>
             <p className="font-semibold text-gray-800">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, ut, eos dolorem maiores nisi sapiente non, vitae vel tenetur optio..</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 grid-cont px-16 pb-16">
