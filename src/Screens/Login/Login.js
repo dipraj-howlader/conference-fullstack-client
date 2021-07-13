@@ -1,9 +1,23 @@
 import React from 'react';
+import firebase from "firebase/app";
+import "firebase/auth";
+import firebaseConfig from './firebase.config';
 import { LockClosedIcon } from '@heroicons/react/solid'
 import img from '../../image/sigcomm.png';
 import imggoogle from '../../image/googlw.png';
 
+if (firebase.apps.length === 0) {
+    firebase.initializeApp(firebaseConfig);
+}
+
 const Login = () => {
+
+    var provider = new firebase.auth.GoogleAuthProvider();
+
+    // const handleGoogleSignIn = (e) =>{
+    //     console.log(e.target);
+    // } 
+
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8">
@@ -86,7 +100,7 @@ const Login = () => {
         ---------- Or continue with ----------
           </p>
           <div style={{display:'flex',textAlign:'center',alignContent:'center',justifyContent:'center'}}>
-          <button style={{display:'flex',textAlign:'center',}} class="m-2 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          <button type="submit" style={{display:'flex',textAlign:'center',}} class="m-2 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
               <img style={{width:'25px',marginRight:'2px'}} src={imggoogle} alt="" /> <p>Google</p>
             </button>
           </div>
