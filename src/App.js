@@ -1,13 +1,29 @@
 import React from "react";
-import HomePage from "./Screens/HomePage/HomePage";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
+import HomePage from "./Screens/HomePage/HomePage";
+import Login from "./Screens/Login/Login";
 
 
 const App = () => {
   return (
-    <div>
+    <Router>
+    <Switch>
+    <Route path="/home">
       <HomePage></HomePage>
-    </div>
+    </Route>
+    <Route exact path="/">
+      <HomePage></HomePage>
+    </Route>
+    <Route path="/login">
+      <Login></Login>
+    </Route>
+    </Switch>
+    </Router>
   );
 };
 

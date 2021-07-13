@@ -5,7 +5,7 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import logo from '../../../image/sigcomm.png';
 import Countdown from "react-countdown";
 import './Navvbarr.css';
-
+import { useHistory } from 'react-router-dom';
 
 const navigation = [
     { name: "Home", href: "#home", current: false },
@@ -19,6 +19,13 @@ const navigation = [
     return classes.filter(Boolean).join(" ");
   }
 const Navvbarr = () => {
+
+const history = useHistory();
+const handleLogin = () =>{
+  history.push("/login");
+  
+}
+
     return (
         <div id="home">
             <Disclosure as="nav" className="navvvar bg-blue-500">
@@ -82,7 +89,7 @@ const Navvbarr = () => {
                     {({ open }) => (
                       <>
                         <div>
-                        <button class="bg-transparent hover:bg-gray-700 text-gray-300 font-semibold hover:text-white py-2 px-4 border border-white-500 hover:border-transparent rounded">
+                        <button onClick={handleLogin} class="bg-transparent hover:bg-gray-700 text-gray-300 font-semibold hover:text-white py-2 px-4 border border-white-500 hover:border-transparent rounded">
   Login
 </button>
                           {/* <Menu.Button className="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
@@ -186,9 +193,12 @@ const Navvbarr = () => {
         <br />
         <span>Day: Hour: Minute: Second</span>
         <br />
-        <button class="animate-bounce bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+        
+<a href="#Tickets">
+<button  class="animate-bounce bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
   BE A PARTICIPANT
 </button>
+</a>
      </div>
         </div>
     );
