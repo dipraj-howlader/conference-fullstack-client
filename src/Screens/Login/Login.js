@@ -26,15 +26,11 @@ const Login = () => {
     // The signed-in user info.
     var user = result.user;
     console.log(user.displayName, user.email, user.photoURL);
+    console.log(token);
     // ...
   }).catch((error) => {
-    // Handle Errors here.
-    var errorCode = error.code;
     var errorMessage = error.message;
-    // The email of the user's account used.
-    var email = error.email;
-    // The firebase.auth.AuthCredential type that was used.
-    var credential = error.credential;
+    console.log(errorMessage)
     // ...
   });
     } 
