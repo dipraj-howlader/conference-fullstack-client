@@ -14,9 +14,30 @@ const Login = () => {
 
     var provider = new firebase.auth.GoogleAuthProvider();
 
-    // const handleGoogleSignIn = (e) =>{
-    //     console.log(e.target);
-    // } 
+    const handleGoogleSignIn = (e) =>{
+      firebase.auth()
+  .signInWithPopup(provider)
+  .then((result) => {
+    /** @type {firebase.auth.OAuthCredential} */
+    var credential = result.credential;
+
+    // This gives you a Google Access Token. You can use it to access the Google API.
+    var token = credential.accessToken;
+    // The signed-in user info.
+    var user = result.user;
+    console.log(user.displayName, user.email, user.photoURL);
+    // ...
+  }).catch((error) => {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // The email of the user's account used.
+    var email = error.email;
+    // The firebase.auth.AuthCredential type that was used.
+    var credential = error.credential;
+    // ...
+  });
+    } 
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
@@ -100,7 +121,7 @@ const Login = () => {
         ---------- Or continue with ----------
           </p>
           <div style={{display:'flex',textAlign:'center',alignContent:'center',justifyContent:'center'}}>
-          <button type="submit" style={{display:'flex',textAlign:'center',}} class="m-2 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          <button onClick={handleGoogleSignIn} style={{display:'flex',textAlign:'center',}} class="m-2 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
               <img style={{width:'25px',marginRight:'2px'}} src={imggoogle} alt="" /> <p>Google</p>
             </button>
           </div>
